@@ -1,0 +1,109 @@
+body {
+	overflow-x: hidden;
+}
+
+header {
+	background-color: whitesmoke;
+}
+
+.top-bar{
+	background-color: #ca2604;
+	color: white;
+	padding: 5px 0 10px;
+}
+
+.search {
+	margin: 5px auto;
+	background-color: white;
+	border-radius: 3px;
+	padding: 5px;
+	font-size: 14px;
+	color: #000;
+}
+
+.logo {
+	display: none;
+}
+
+.menu-area {
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+	font-weight: 300;
+	background-color: white;
+	box-shadow: 0 1px 10px -6px rgba(0, 0, 0, 0.42);
+	color: #000;
+	padding-top: 32px;
+	height: 80px;
+}
+
+nav .main-menu {
+	line-height: 1.6;
+	padding-left: 0;
+	flex-direction: column;
+}
+
+.main-menu a {
+	color: #000;
+	padding-top:15px;
+	padding-bottom:15px;
+}
+
+.main-menu a:hover {
+	background-color: #ca2604;
+	border-radius: 3px;
+	padding: 10px;
+	color: white;
+}
+
+nav a, nav a:hover, nav a:visited {
+	font-weight: 400;
+	text-decoration: none;
+	text-transform: uppercase;
+	margin: 5px;
+}
+
+.main-menu ul li, .footer-menu ul li {
+	display: inline;
+}
+
+.breadcrumbs {
+    margin-top: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    text-align: center;
+    color: #181818;
+    padding: 15px 0
+}
+
+.breadcrumbs a, .breadcrumbs a:visited {
+	color: #ca2604;
+	text-decoration: none;
+}
+
+.wp-post-image {
+	float: left;
+	margin: 0 15px 10px 0;
+}
+
+.blog-article{
+	display: inline-block;
+}
+
+footer {
+	margin-top: 50px;
+	padding: 30px 0 10px 0;
+	background-color: #000;
+	color: white;
+}
+
+nav .footer-menu {
+	flex-direction: column;
+}
+
+.footer-menu a {
+	color: #fff;
+}
+
+.footer-menu a:hover {
+	color: gray;
+}
