@@ -4,7 +4,7 @@
 				<div class="copyright col-sm-7 col-4">
 					<p>Copyright</p>
 				</div>
-				<nav class="footer-menu col-sm-5 col-8 text-right">
+				<nav class="nav navbar-nav footer-menu col-sm-5 col-8 text-right">
 					<?php wp_nav_menu(
 						array(
 							'theme_location'=> 'mira_footer_menu'

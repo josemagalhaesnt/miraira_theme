@@ -13,11 +13,11 @@
 		<section class="top-bar">
 			<div class="container">
 				<div class="row">
-					<div class="social-media-icons col-xl-9 col-sm-7 col-6">
+					<div class="social-media-icons col-xl-8 col-sm-7 col-10">
 						Ícones Sociais
 					</div>
-					<div class="search col-xl-3 col-sm-5 col-6 text-center">
-						Pesquisa <i class="fas fa-search"></i> 
+					<div class="search col-xl-4 col-sm-5 col-2 text-right">
+						<?php get_search_form();?>
 					</div>
 				</div>
 			</div>
@@ -26,17 +26,28 @@
 			<section class="menu-area">
 				<div class="container">
 					<div class="row">
-						<section class="logo col-md-2 col-12 text-center">
-							Logo
-						</section>
-						<nav class="main-menu col-md-10 text-center">
-							<?php 
-							wp_nav_menu(
-								array(
-									'theme_location'=> 'mira_main_menu'
-								)
-							);
-							?>
+						<nav class="navbar navbar-expand-md navbar-light" role="navigation">
+							<div class="container">
+								<!-- Brand and toggle get grouped for better mobile display -->
+								<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-controls="bs-example-navbar-collapse-1" aria-expanded="false" aria-label="Toggle navigation">
+									<span class="navbar-toggler-icon"></span>
+								</button>
+								<a class="logo navbar-brand" href="<?php echo home_url(); ?>">
+									<?php bloginfo('name'); ?>
+								</a>
+								<?php
+								wp_nav_menu( array(
+									'theme_location' => 'mira_main_menu',
+									'depth' => 2,
+									'container' => 'div',
+									'container_class' => 'collapse navbar-collapse',
+									'container_id' => 'bs-example-navbar-collapse-1',
+									'menu_class' => 'nav navbar-nav',
+									'fallback_cb' => 'WP_Bootstrap_Navwalker::fallback',
+									'walker' => new WP_Bootstrap_Navwalker())
+								);
+								?>
+							</div>
 						</nav>
 					</div>
 				</div>

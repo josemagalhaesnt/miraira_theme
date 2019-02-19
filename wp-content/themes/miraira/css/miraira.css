@@ -1,3 +1,11 @@
+/** Fonts **/
+
+h1{font-size: 28px; margin: 15px 0 15px;}
+h2{font-size: 24px; margin-top:0}
+h3{font-size: 20px; margin-top:0}
+h4{font-size: 18px; margin-top:0}
+
+/** General Template **/
 body {
 	overflow-x: hidden;
 }
@@ -6,66 +14,142 @@ header {
 	background-color: whitesmoke;
 }
 
+/** Top Menu **/
+
 .top-bar{
 	background-color: #ca2604;
 	color: white;
-	padding: 5px 0 10px;
+}
+
+.social-media-icons {
+	padding: 10px;
 }
 
 .search {
 	margin: 5px auto;
-	background-color: white;
 	border-radius: 3px;
 	padding: 5px;
 	font-size: 14px;
 	color: #000;
 }
 
-.logo {
-	display: none;
+.active-pink .fa, .active-pink-4 .fa {
+    color: #f48fb1;
 }
 
-.menu-area {
-	font-family: 'Roboto', sans-serif;
-	font-size: 16px;
-	font-weight: 300;
-	background-color: white;
-	box-shadow: 0 1px 10px -6px rgba(0, 0, 0, 0.42);
-	color: #000;
-	padding-top: 32px;
-	height: 80px;
+.active-pink-4 input[type=text]:focus:not([readonly]) {
+    border: 1px solid #f48fb1;
+    box-shadow: 0 1px 0 0 #f48fb1;
+}
+.active-pink-4 input[type=text] {
+    border: 1px solid #f48fb1;
+    box-shadow: 0 1px 0 0 #f48fb1;
 }
 
-nav .main-menu {
-	line-height: 1.6;
-	padding-left: 0;
-	flex-direction: column;
-}
-
-.main-menu a {
-	color: #000;
-	padding-top:15px;
-	padding-bottom:15px;
-}
-
-.main-menu a:hover {
-	background-color: #ca2604;
-	border-radius: 3px;
-	padding: 10px;
-	color: white;
-}
+/** Menus **/
 
 nav a, nav a:hover, nav a:visited {
 	font-weight: 400;
 	text-decoration: none;
 	text-transform: uppercase;
-	margin: 5px;
 }
 
-.main-menu ul li, .footer-menu ul li {
+.menu-area {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+	line-height: 1.6em;
+	background-color: white;
+	box-shadow: 0 1px 10px -6px rgba(0, 0, 0, 0.42);
+	color: #000;
+	padding: 15px 0;
+}
+
+/** Main Menu **/
+
+.logo {
+	display: none;
+}
+
+.main-menu ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	font-size: 16px;
+}
+
+.main-menu ul li {
 	display: inline;
+	margin: 0 30px 0 0;
 }
 
+.main-menu ul li:last-child {
+	margin: 0;
+}
+
+.main-menu ul li.current-menu-item a {
+	color: #ca2604;
+}
+
+.main-menu a {
+	color: #000;
+	padding: 15px 0;
+	
+}
+
+.main-menu a:hover {
+	background-color: #ca2604;
+	padding: 10px;
+	border-radius: 3px;
+	color: white !important;
+}
+
+/** Middle Area **/
+.middle-area{
+	padding: 25px 0;
+}
+
+.middle-area h1{
+	color: #ca2604;
+	text-transform: uppercase;
+}
+
+.home .news h1 {
+	color: #ca2604;
+	text-transform: uppercase;
+	font-size: 38px;
+	font-weight: bold;
+}
+
+.home .news .format-image h2, .home .news .format-video h2, .home .news .format-standard h2 {
+	color: #000;
+	background: transparent;
+	display: inline-block;
+	padding: 10px 0 5px;
+	font-weight: bold;
+}
+
+.home .news .featured h2 {
+	font-size: 35px;
+}
+
+.home .news .secondary h2 {
+	font-size: 20px;
+}
+
+.home .news .meta-info p {
+	font-weight: bold;
+	margin-bottom: 0;
+}
+
+.home .news span, .news span a {
+	color: #9c9c9c;
+	font-weight: normal;
+	margin: 0 2px 0 0;
+}
+
+
+
+/* Breadcrumbs */
 .breadcrumbs {
     margin-top: 10px;
     font-family: 'Roboto', sans-serif;
@@ -80,28 +164,87 @@ nav a, nav a:hover, nav a:visited {
 	text-decoration: none;
 }
 
+/** Blog **/
+
 .wp-post-image {
 	float: left;
 	margin: 0 15px 10px 0;
 }
 
+.format-image h2 {
+	color: #fff;
+	background: #717171;
+	padding: 15px;
+}
+
+.format-video h2 {
+	color: #fff;
+	background: #211e1e;
+	padding: 15px;
+}
+
+.format-standard h2 {
+	color: #444;
+	background: #d2d2d2;
+	padding: 15px;
+}
+
 .blog-article{
 	display: inline-block;
+	margin: 0 0 30px;
+	width: 100%;
 }
 
+.blog-article h2{
+	margin-bottom: 15px;
+}
+
+.blog-article p > img {
+	height: auto;
+	width: 100%;
+}
+
+.blog .meta-info p {
+	line-height: 1em;
+	font-weight: bold;
+}
+
+.blog .meta-info p > a {
+	color: #9d9d9d;
+	font-weight: normal;
+} 
+
+/** Footer **/
 footer {
-	margin-top: 50px;
-	padding: 30px 0 10px 0;
+	padding: 25px 0 15px;
 	background-color: #000;
-	color: white;
+	color: #fcfae1;
 }
 
-nav .footer-menu {
-	flex-direction: column;
+/** Footer Menu **/
+.footer-menu ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	font-size: 18px;
 }
 
-.footer-menu a {
-	color: #fff;
+.footer-menu ul li {
+	display: inline;
+	margin: 0 15px 0 0;
+}
+
+.footer-menu ul li:last-child {
+	margin: 0;
+}
+
+.footer-menu ul li a {
+	color: #fcfae1;
+	text-decoration: none;
+}
+
+.footer-menu ul li.current-menu-item a{
+	color: #ca2604;
 }
 
 .footer-menu a:hover {
