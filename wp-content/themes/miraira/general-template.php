@@ -27,14 +27,12 @@ Template Name: Miraira General Template
 								<?php the_content(); ?>
 							</article>
 
-							<p>Este é um modelo de página</p>
-
 							<?php 
 								endwhile;
 
 							else:	
 							?>
-							<p>There's nothing yet to be displayed</p>
+							<p><?php _e('There is nothing yet to be displayed', 'miraira'); ?></p>
 						<?php endif;?>
 						</div>
 					
