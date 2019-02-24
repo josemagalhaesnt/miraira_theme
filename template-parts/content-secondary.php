@@ -9,7 +9,9 @@
 	<div class="meta-info">
 		<p>
             <?php _e('by', 'miraira'); ?> <?php the_author_posts_link(); ?>
-		    <?php _e('Categories: ', 'miraira');?><span><?php the_category(' '); ?></span>
+		    <?php if(has_category()): ?>
+			    <p><?php _e('Categories: ', 'miraira');?><span><?php the_category(' '); ?></span></p>
+            <?php endif; ?>
             <?php the_tags('Tags: <span>', ', ', '</span>'); ?>
         </p>
 	</div>
