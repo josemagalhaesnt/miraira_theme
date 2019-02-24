@@ -49,32 +49,6 @@ header.single-post, header.hd-error {
 	color: white;
 }
 
-.social-media-icons {
-	padding: 10px;
-}
-
-.search {
-	width: 100%;
-	margin: 5px auto;
-	border-radius: 3px;
-	padding: 5px;
-	font-size: 14px;
-	color: var(--black);
-}
-
-.active-pink .fa, .active-pink-4 .fa {
-    color: #f48fb1;
-}
-
-.active-pink-4 input[type=text]:focus:not([readonly]) {
-    border: 1px solid #f48fb1;
-    box-shadow: 0 1px 0 0 #f48fb1;
-}
-.active-pink-4 input[type=text] {
-    border: 1px solid #f48fb1;
-    box-shadow: 0 1px 0 0 #f48fb1;
-}
-
 /* Align */
 .align { 
 	display:flex; 
@@ -88,6 +62,7 @@ nav a, nav a:hover, nav a:visited {
 	font-weight: 400;
 	text-decoration: none;
 	text-transform: uppercase;
+	font-size: 15px;
 }
 
 .menu-area {
@@ -97,7 +72,21 @@ nav a, nav a:hover, nav a:visited {
 	background-color: white;
 	box-shadow: 0 1px 10px -6px rgba(0, 0, 0, 0.42);
 	color: var(--black);
-	padding: 15px 0;
+	padding: 15px;
+}
+
+.dropdown-item {
+	padding: 10px;
+}
+.dropdown-item, .dropdown-item:visited {
+	color: var(--black);
+}
+
+.dropdown-item:hover, .dropdown-item:active, .dropdown-item:focus {
+	font-weight: 500;
+	color: var(--vivid-orange)!important;
+	background-color: transparent;
+	border-radius: 3px;
 }
 
 /** Main Menu **/
@@ -106,12 +95,12 @@ nav a, nav a:hover, nav a:visited {
 	list-style: none;
 	padding: 0;
 	margin: 0;
-	font-size: 16px;
+	font-size: 13px;
 }
 
 .main-menu ul li {
 	display: inline;
-	margin: 0 30px 0 0;
+	margin: 0 20px 0 0;
 }
 
 .main-menu ul li:last-child {
@@ -122,14 +111,17 @@ nav a, nav a:hover, nav a:visited {
 	color: var(--black);
 }
 
+.navbar-light .navbar-nav .nav-link:hover {
+	color: var(--vivid-orange);
+	font-weight: 500;
+}
+
 .navbar-light .navbar-nav .active>.nav-link {
 	color: var(--main-orange) !important;
 }
 
 .main-menu a {
 	color: var(--black);
-	padding: 15px 0;
-	
 }
 
 .main-menu a:hover {
@@ -180,7 +172,10 @@ nav a, nav a:hover, nav a:visited {
 	margin: 0 2px 0 0;
 }
 
-
+#main {
+	padding: 30px;
+	min-height: 300px;
+}
 
 /* Breadcrumbs */
 .breadcrumbs {
@@ -280,6 +275,7 @@ footer a{
 
 .footer-menu ul li {
 	display: inline;
+	padding: 5px;
 	margin: 15px 0;
 }
 

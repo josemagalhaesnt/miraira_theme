@@ -12,7 +12,7 @@
 		<section class="top-bar">
 			<div class="container">
 				<div class="row">
-					<div class="search col-12 mx-auto text-right">
+					<div class="search col-md-8 col-12 mx-auto">
 						<?php get_search_form();?>
 					</div>
 				</div>
@@ -20,16 +20,15 @@
 		</section>
 
 			<section class="menu-area">
-				<div class="container">
 					<div class="row d-flex align-items-center">
 						<section class="logo col-md-2 col-12">
 							<?php the_custom_logo(); ?>
 						</section>
 
-						<nav class="navbar navbar-expand-md navbar-light col-md-10 col-12" role="navigation">
+						<nav class="navbar navbar-expand-md navbar-light col-md-10 col-12 text-center" role="navigation">
 							<div class="container">
 								<!-- Brand and toggle get grouped for better mobile display -->
-								<button class="navbar-toggler text-center" type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-controls="bs-example-navbar-collapse-1" aria-expanded="false" aria-label="Toggle navigation">
+								<button class="navbar-toggler mx-auto" type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-controls="bs-example-navbar-collapse-1" aria-expanded="false" aria-label="Toggle navigation">
 									<span class="navbar-toggler-icon"></span> 
 									<span style="font-size:15px;">MENU</span>
 								</button>
@@ -46,10 +45,12 @@
 									'walker' => new WP_Bootstrap_Navwalker())
 								);
 								?>
+								
 							</div>
+
+							<!--<?php get_search_form();?>-->
 						</nav>
 					</div>
-				</div>
 			</section>
 			<section class="breadcrumbs">
 				<div class="elementor mira-nav">

@@ -1,6 +1,6 @@
 <article <?php post_class(array('class'=> 'featured'));?>>
 
-	<?php echo get_post_format(); ?>
+	<?php get_post_format(); ?>
    
     <div class="thumbnail">
         <a href="<?php the_permalink();?>"><?php the_post_thumbnail('large', array('class'=> 'img-fluid'));?></a>
