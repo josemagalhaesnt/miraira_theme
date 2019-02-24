@@ -1,4 +1,9 @@
 <?php 
+
+//Incluindo os arquivos da TGM
+require_once get_template_directory() . '/inc/class-tgm-plugin-activation.php';
+require_once get_template_directory() . '/inc/required-plugins.php';
+
 // Customizador Wordpress
 require get_template_directory() . '/inc/customizer.php';
 
@@ -12,9 +17,16 @@ function load_scripts(){
 	wp_enqueue_style('template', get_template_directory_uri() . '/css/miraira.css', array());
 	wp_enqueue_style('icons','https://use.fontawesome.com/releases/v5.7.1/css/all.css', array(), '5.7.1','all');
 	wp_enqueue_style('google-fonts', 'https://fonts.googleapis.com/css?family=Roboto',array());
+	wp_enqueue_script('fitvids', get_template_directory_uri() . '/js/fitvids.js', array('jquery'), null, true);
 }
 
 add_action('wp_enqueue_scripts','load_scripts');
+
+function miraira_editor_styles() {
+	wp_enqueue_style('editor-styles', get_template_directory_uri() . '/css/style-editor.css');
+}
+
+add_action('enqueue_block_editor_assets', 'miraira_editor_styles');
 
 // Configurações do Tema
 function miraira_config() {
@@ -45,8 +57,63 @@ function miraira_config() {
 	$textdomain = 'miraira';
 	load_theme_textdomain($textdomain, get_stylesheet_directory() . '/languages/');
 	load_theme_textdomain($textdomain, get_template_directory() . '/languages/');
-	
 
+	//Suporte ao Gutenberg
+	add_theme_support( 'gutenberg', array() );
+	add_theme_support('align-wide');
+	add_theme_support('editor-color-palette', array(
+		array(
+			'name' => __('Miraira Orange', 'miraira'),
+			'slug' => 'miraira-orange',
+			'color' => '#ca2604',
+		),
+		array(
+			'name' => __('Bloody Red', 'miraira'),
+			'slug' => 'bloody-red',
+			'color' => '#91171F'
+		),
+		array(
+			'name' => __('St. Brás Wine', 'miraira'),
+			'slug' => 'wine',
+			'color' => '#5F021F'
+		), 
+		array(
+			'name' => __('Brazilian Sand', 'miraira'),
+			'slug' => 'sand',
+			'color' => '#BC5D2E'
+		), 
+		array(
+			'name' => __('Light Orange', 'miraira'),
+			'slug' => 'light-orange',
+			'color' => '#EA8C55'
+		), 
+		array(
+			'name' => __('Brazilian Yellow', 'miraira'),
+			'slug' => 'brazilian-yellow',
+			'color' => '#F0C808'
+		), 
+		array(
+			'name' => __('Champagne', 'miraira'),
+			'slug' => 'champagne',
+			'color' => '#F5E2C8'
+		),
+		array(
+			'name' => __('Cachaça', 'miraira'),
+			'slug' => 'cachaca',
+			'color' => '#BBB8B2'
+		),
+		array(
+			'name' => __('White', 'miraira'),
+			'slug' => 'white',
+			'color' => '#FCF7F8',
+		),
+		array(
+			'name' => __('Black', 'miraira'),
+			'slug' => 'black',
+			'color' => '#2E2E3A',
+		)
+	));
+	
 }
 
 add_action('after_setup_theme','miraira_config', 0);
