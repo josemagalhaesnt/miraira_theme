@@ -25,7 +25,7 @@
 							<?php the_custom_logo(); ?>
 						</section>
 
-						<nav class="navbar navbar-expand-md navbar-light col-md-10 col-12 text-center" role="navigation">
+						<nav class="navbar navbar-expand-md navbar-light text-center" role="navigation">
 							<div class="container">
 								<!-- Brand and toggle get grouped for better mobile display -->
 								<button class="navbar-toggler mx-auto" type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-controls="bs-example-navbar-collapse-1" aria-expanded="false" aria-label="Toggle navigation">
@@ -40,7 +40,7 @@
 									'container' => 'div',
 									'container_class' => 'collapse navbar-collapse',
 									'container_id' => 'bs-example-navbar-collapse-1',
-									'menu_class' => 'main-menu nav navbar-nav',
+									'menu_class' => 'main-menu nav navbar-nav sticky-top',
 									'fallback_cb' => 'WP_Bootstrap_Navwalker::fallback',
 									'walker' => new WP_Bootstrap_Navwalker())
 								);

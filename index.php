@@ -1,11 +1,10 @@
 <?php get_header();?>
-	<img class="img-fluid" src="<?php header_image(); ?>" height="<?php echo get_custom_header()->height; ?>" width="<?php echo get_custom_header()->width; ?>" alt="" />
 	<div class="content-area">
 		<main>
 			<section class="middle-area">
 				<div class="container">
 					<div class="row">
-						<div class="news col-md-12">	
+						<div class="main col-md-12">	
 							<?php
 							//Se houver algum post
 								if(have_posts()):
@@ -18,15 +17,6 @@
 							<?php 
 								endwhile;
 							?>
-
-							<div class="row">
-								<div class="pages text-left col-6">
-									<?php previous_posts_link(__('<< Newer posts', 'miraira')); ?>
-								</div>
-								<div class="pages text-right col-6">
-									<?php next_posts_link(__('Older posts >>','miraira')); ?>
-								</div>
-							</div>
 
 							<?php
 								else:	

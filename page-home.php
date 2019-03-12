@@ -4,7 +4,7 @@
 			<section class="middle-area">
 				<div class="container">
 					<div class="row">
-						<div class="news col-md-12">	
+						<div class="main col-md-12">	
 							<div class="container">
 								<h1><?php _e('Latest News', 'miraira');?></h1>
 								<div class="row">
