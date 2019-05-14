@@ -1,0 +1,52 @@
+/** Middle Area **/
+.home .middle-area{
+	padding: 0;
+	margin: 0;
+}
+
+.middle-area {
+	padding: 2.5rem 0;
+}
+
+.middle-area h1{
+	color: var(--main-orange);
+	text-transform: uppercase;
+}
+
+.home .main h1 {
+	color: var(--main-orange);
+	text-transform: uppercase;
+	font-size: 3.8rem;
+	font-weight: bold;
+}
+
+.home .main .format-image h2, .home .main .format-video h2, .home .main .format-standard h2 {
+	color: var(--black);
+	background: transparent;
+	display: inline-block;
+	padding: 1rem 0 .5rem;
+	font-weight: bold;
+}
+
+.home .main .featured h2 {
+	font-size: 3.5rem;
+}
+
+.home .main .secondary h2 {
+	font-size: 2rem;
+}
+
+.home .main .meta-info p {
+	font-weight: normal;
+	margin-bottom: 0;
+}
+
+.home .main span, .main span a {
+	font-weight: normal;
+	margin: 0 .2rem 0 0;
+}
+
+#main {
+	padding: 3rem;
+	min-height: 30rem;
+}

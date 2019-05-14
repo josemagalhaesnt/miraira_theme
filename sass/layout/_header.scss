@@ -1,0 +1,47 @@
+.header {
+	background-color: var(--white);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	/** Top Menu **/
+	.top-header {
+		margin-top: 1rem;
+		padding: 1.5rem 0;
+		font-size: 1.5rem;
+		
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+
+		&__breadcrumbs {
+			
+			font-family: 'Roboto', sans-serif;
+			text-align: center;
+			color: #181818;
+			margin-right: auto;
+			
+
+			&,
+			&:link, 
+			&:visited {
+				color: var(--main-orange);
+				text-decoration: none;
+			}
+		}
+
+		&__search {
+
+			.form-control {
+				font-size: 1.3rem;
+			}
+			
+		}
+	}
+
+	body.home .top-header__breadcrumbs {
+		display: none;
+	}
+}

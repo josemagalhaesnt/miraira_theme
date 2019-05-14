@@ -1,4 +1,4 @@
-	<footer>
+	<footer class="footer">
 		<div class="container">
 			<div class="row d-flex align-items-center">
 				<nav class="nav navbar-nav footer-menu col-md-9 col-12 text-center">
@@ -11,7 +11,7 @@
 				</nav>
 				
 				<div class="copyright col-md-3 col-12 text-center">
-					<p>&copy Desenvolvido por: <a href="http://zneto.github.io">José Neto</a></p>
+					<p class="copyright__developer">&copy Desenvolvido por: <a class="copyright__link" href="https://josemagalhaesnt.github.io">José Magalhães</a></p>
 				</div>
 				
 			</div>

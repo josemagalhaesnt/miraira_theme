@@ -1,0 +1,25 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/** Base Config **/
+
+html {
+   font-size: 62.5%; //10px
+}
+
+body {
+    font-size: $default-font-size;
+    overflow-x: hidden;
+    background-color: #fff;
+}
+
+a {
+	color: var(--main-orange);
+}
+
+a:hover {
+	color: var(--light-orange);
+	text-decoration: none;
+}

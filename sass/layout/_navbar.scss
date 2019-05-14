@@ -1,0 +1,67 @@
+/** Navbar **/
+.menu-area {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+	line-height: 1.6;
+	background-color: white;
+	box-shadow: 0 1px 1rem -6px rgba(0, 0, 0, 0.42);
+	color: var(--black);
+	padding: 1.5rem 0;
+	position: relative;
+
+	display: flex;
+	flex: 1;
+}
+
+.navbar {
+	
+	.main-menu {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+		
+		&:not(:last-child) {
+			margin: 0 2rem 0 0;
+		}
+
+		.nav {
+			&-link {
+				font-weight: 400;
+				text-decoration: none;
+				text-transform: uppercase;
+				font-size: 1.5rem;
+				
+				&:link, &:visited {
+					color: black;
+				}
+			}
+		}
+
+		.navbar-nav {
+			display: block;
+		}
+
+		.dropdown-menu {
+			font-size: inherit;
+			position: static;
+			text-align: justify;
+			text-transform: uppercase;
+
+			&-item {
+
+				padding: 0 .5rem;
+				font-weight: 500;
+
+				&:link, &:visited {
+					color: black;
+				}
+
+				&:hover, &:active {
+					color: var(--main-orange);	
+				}
+			}
+			
+		}
+
+	}
+}

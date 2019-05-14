@@ -1,0 +1,99 @@
+/* Gutenberg Support */
+
+/* Main column width */
+.wp-block {
+    max-width: 800px;
+}
+
+/* Width of "wide" blocks */
+.wp-block[data-align="wide"] {
+    max-width: 1080px;
+}
+
+/* Width of "full-wide" blocks */
+.wp-block[data-align="full"] {
+    max-width: none;
+}
+
+@media only screen and (min-width: 1140px) {
+ 
+    .alignfull, .alignwide {
+        margin-bottom: 2em;
+    }
+    .alignwide {
+        width: 75vw;
+        margin-left: calc( 50% - 75vw / 2 );
+        max-width: none;
+    }
+}
+ 
+.alignfull {
+    width: 100vw;
+    margin-left: calc( 50% - 50vw );
+    max-width: none;
+}
+ 
+.wp-block-image.alignfull img, .wp-block-image.alignwide img {
+    width: 100%;
+}
+/*  Gutemberg Editor Color Scheme */
+.has-miraira-orange-background-color {
+	background-color: #ca2604;
+}
+.has-miraira-orange-color{
+	color: #ca2604;
+}
+.has-bloody-red-background-color {
+	background-color: #91171F;
+}
+.has-bloody-red-color{
+	color: #91171F;
+}
+.has-wine-background-color {
+	background-color: #5F021F;
+}
+.has-wine-color{
+	color: #5F021F;
+}
+.has-sand-background-color {
+	background-color: #BC5D2E;
+}
+.has-sand-color{
+	color: #BC5D2E;
+}
+.has-light-orange-background-color {
+	background-color: #EA8C55;
+}
+.has-light-orange-color{
+	color: #EA8C55;
+}
+.has-brazilian-yellow-background-color {
+	background-color: #F0C808;
+}
+.has-brazilian-yellow-color{
+	color: #F0C808;
+}
+.has-champagne-background-color {
+	background-color: #F5E2C8;
+}
+.has-champagne-color{
+	color: #F5E2C8;
+}
+.has-cachaca-background-color {
+	background-color: #BBB8B2;
+}
+.has-cachaca-color{
+	color: #BBB8B2;
+}
+.has-black-background-color {
+	background-color: #121217;
+}
+.has-black-color{
+	color: #121217;
+}
+.has-white-background-color {
+	background-color: #FCF7F8;
+}
+.has-white-color{
+	color: #FCF7F8;
+}
