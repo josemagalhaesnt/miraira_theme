@@ -15,6 +15,22 @@
 
 #main {
 	background-color: #990000;
+
+	.container {
+		background-color: white;
+		padding: 4rem 2.5rem;
+		text-align: center;
+	}
+	.meta-info {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+
+		p {
+			margin: 0 1.5rem 3rem;
+		}
+
+	}
 }
 
 .format-video {

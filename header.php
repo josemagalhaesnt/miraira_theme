@@ -11,34 +11,32 @@
 	
 	<header class="header">
 		<div class="menu-area">
-			<div class="row d-flex align-items-center">
-				<section class="logo col-md-2 col-12">
-					<?php the_custom_logo(); ?>
-				</section>
-
-				<nav class="navbar navbar-expand-md navbar-light col-md-10 col-12 sticky-bottom text-center" role="navigation">
+			
+				<nav class="navbar navbar-expand-md navbar-light" role="navigation">
 					<div class="container">
 						<!-- Brand and toggle get grouped for better mobile display -->
-						<button class="navbar-toggler mx-auto" type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-controls="bs-example-navbar-collapse-1" aria-expanded="false" aria-label="Toggle navigation">
-							<span class="navbar-toggler-icon"></span> 
-							<span style="font-size:15px;">MENU</span>
+						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-controls="bs-example-navbar-collapse-1" aria-expanded="false" aria-label="Toggle navigation">
+							<span class="navbar-toggler-icon"></span>
 						</button>
-						
-						<?php
-						wp_nav_menu( array(
-							'theme_location' => 'mira_main_menu',
-							'depth' => 2,
-							'container' => 'div',
-							'container_class' => 'collapse navbar-collapse',
-							'container_id' => 'bs-example-navbar-collapse-1',
-							'menu_class' => 'main-menu nav navbar-nav',
-							'fallback_cb' => 'WP_Bootstrap_Navwalker::fallback',
-							'walker' => new WP_Bootstrap_Navwalker())
-						);
-						?>		
+
+						<div class="logo navbar-brand">
+							<?php the_custom_logo(); ?>
+						</div>
+							<?php
+							wp_nav_menu( array(
+								'theme_location'    => 'mira_main_menu',
+								'depth'             => 2,
+								'container'         => 'div',
+								'container_class'   => 'collapse navbar-collapse',
+								'container_id'      => 'main-menu',
+								'menu_class'        => 'nav navbar-nav main-menu',
+								'fallback_cb'       => 'WP_Bootstrap_Navwalker::fallback',
+								'walker'            => new WP_Bootstrap_Navwalker()
+							) );
+							?>
 					</div>
 				</nav>
-			</div>
+			
 		</div>
 
 		<div class="container">
@@ -54,7 +52,7 @@
 						?>
 					</div>
 
-					<div class="top-header__search col-md-8 col-12 mx-auto">
+					<div class="top-header__search">
 						<?php get_search_form();?>
 					</div>
 				</div>

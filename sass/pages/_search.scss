@@ -1,0 +1,21 @@
+.search-results {
+    &__box {
+        background-color: white;
+        padding: 6rem;
+
+        display: flex;
+        flex-direction: column;      
+    }
+
+    &__post {
+       &:not(:last-child){
+           margin-bottom: 1rem;
+       } 
+    }
+
+    &__title {
+        font-size: 3rem;
+        margin: 2.25rem 0;
+        padding: 3rem;
+    }
+}

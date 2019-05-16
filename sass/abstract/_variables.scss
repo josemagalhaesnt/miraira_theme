@@ -1,6 +1,7 @@
 /** Colors **/
 
 :root {
+	--color-primary: #ca2604;
 	--main-orange: #ca2604;
 	--red: #91171F;
 	--orange-red: #B52203;
@@ -13,6 +14,8 @@
 	--white: #FCF7F8;
 	--black: #121217;
 }
+
+$theme-default-color: var(--color-primary);
 
 /** Typography **/
 $default-font-size: 1.6rem;
