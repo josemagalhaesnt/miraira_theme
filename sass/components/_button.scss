@@ -12,3 +12,21 @@ input[type=number]:focus,
 [contenteditable].form-control:focus {
 	box-shadow: inset 0 -1px 0 #ddd;
 }
+
+.back-to-top {
+	width: 7.3rem;
+	position: fixed;
+	bottom: 2em;
+	right: 2em;
+	text-decoration: none;
+	color: white;
+	background-color: rgba(0, 0, 0, 0.3);
+	font-size: 12px;
+	padding: 1em;
+	border-radius: 3px;
+	display: none;
+}
+
+.back-to-top:hover {
+	background-color: rgba(0, 0, 0, 0.6);
+}

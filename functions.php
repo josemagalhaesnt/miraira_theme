@@ -18,6 +18,7 @@ function load_scripts(){
 	wp_enqueue_style('template', get_template_directory_uri() . '/css/style.css', array());
 	wp_enqueue_style('icons','https://use.fontawesome.com/releases/v5.7.1/css/all.css', array(), '5.7.1','all');
 	wp_enqueue_script('fitvids', get_template_directory_uri() . '/js/fitvids.js', array('jquery'), null, true);
+	
 }
 
 add_action('wp_enqueue_scripts','load_scripts');
