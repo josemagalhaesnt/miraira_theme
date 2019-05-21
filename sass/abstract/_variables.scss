@@ -1,21 +1,21 @@
 /** Colors **/
 
 :root {
-	--color-primary: #ca2604;
+	--wine: #990000;
 	--main-orange: #ca2604;
-	--red: #91171F;
-	--orange-red: #B52203;
-	--wine: #5F021F;
-	--vivid-orange: #BC5D2E;
-	--light-orange: #EA8C55;
-	--yellow: #F0C808;
+	--vivid-orange: #d84a05;
+	--light-orange: #ec7505;
+	--yellow: #e89005;
+	
 	--beige: #F5E2C8;
-	--champagne: #BBB8B2;
-	--white: #FCF7F8;
-	--black: #121217;
+	--grey: #BBB8B2;
+	--light-grey-1: #eae9e7;
+	--light-grey-2: #f8f7f7;
+	--white: #fff;
+	--black: #222;	
 }
 
-$theme-default-color: var(--color-primary);
+$theme-default-color: var(--main-orange);
 
 /** Typography **/
 $default-font-size: 1.6rem;

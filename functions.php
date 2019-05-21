@@ -50,7 +50,7 @@ function miraira_config() {
 	add_theme_support('custom-header', $args);
 	add_theme_support('post-thumbnails');
 	add_theme_support('yoast-seo-breadcrumbs');
-	add_theme_support('post-formats', array('video','image', 'gallery'));
+	add_theme_support('post-formats', array('audio','video','image', 'gallery'));
 	set_post_thumbnail_size( 360, 240 );
 	add_image_size( 'miraira-mini', 360, 240, TRUE);
 
@@ -68,30 +68,26 @@ function miraira_config() {
 			'slug' => 'miraira-orange',
 			'color' => '#ca2604',
 		),
-		array(
-			'name' => __('Bloody Red', 'miraira'),
-			'slug' => 'bloody-red',
-			'color' => '#91171F'
-		),
+		
 		array(
 			'name' => __('St. Brás Wine', 'miraira'),
 			'slug' => 'wine',
-			'color' => '#5F021F'
+			'color' => '#990000'
 		), 
 		array(
-			'name' => __('Brazilian Sand', 'miraira'),
-			'slug' => 'sand',
-			'color' => '#BC5D2E'
+			'name' => __('Vivid Orange', 'miraira'),
+			'slug' => 'vivid-orange',
+			'color' => '#d84a05'
 		), 
 		array(
 			'name' => __('Light Orange', 'miraira'),
 			'slug' => 'light-orange',
-			'color' => '#EA8C55'
+			'color' => '#ec7505'
 		), 
 		array(
-			'name' => __('Brazilian Yellow', 'miraira'),
-			'slug' => 'brazilian-yellow',
-			'color' => '#F0C808'
+			'name' => __('Yellow', 'miraira'),
+			'slug' => 'yellow',
+			'color' => '#e89005'
 		), 
 		array(
 			'name' => __('Champagne', 'miraira'),
@@ -111,7 +107,7 @@ function miraira_config() {
 		array(
 			'name' => __('Black', 'miraira'),
 			'slug' => 'black',
-			'color' => '#2E2E3A',
+			'color' => '#121217',
 		)
 	));
 	

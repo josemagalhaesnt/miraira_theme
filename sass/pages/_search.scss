@@ -4,10 +4,16 @@
         padding: 6rem;
 
         display: flex;
-        flex-direction: column;      
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;      
     }
 
     &__post {
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+
        &:not(:last-child){
            margin-bottom: 1rem;
        } 

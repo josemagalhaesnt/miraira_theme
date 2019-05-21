@@ -3,7 +3,7 @@
         <div id="main">
             <div class="search-results__box container">
                 <div class="row">
-                    <h2 class="search-results__title"><?php _e('Search results for: ', 'miraira'); echo get_search_query();?></h2>
+                    <h2 class="search-results__title text-center"><?php _e('Search results for: ', 'miraira'); echo get_search_query();?></h2>
                 </div>
                 
                 <?php if(have_posts()):
