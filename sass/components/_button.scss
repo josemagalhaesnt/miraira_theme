@@ -14,19 +14,22 @@ input[type=number]:focus,
 }
 
 .back-to-top {
-	width: 7.3rem;
+	//width: 7.3rem;
 	position: fixed;
-	bottom: 2em;
-	right: 2em;
+	bottom: 4.5rem;
+	right: 3rem;
 	text-decoration: none;
 	color: white;
-	background-color: rgba(0, 0, 0, 0.3);
-	font-size: 12px;
-	padding: 1em;
-	border-radius: 3px;
+	background-color: rgba(0, 0, 0, .8);
+	font-size: 1.3rem;
+	padding: 1rem;
+	border-radius: 10rem;
 	display: none;
+	overflow: hidden;
+	transition: background .2s;
 }
 
 .back-to-top:hover {
-	background-color: rgba(0, 0, 0, 0.6);
+	background-color: rgba(0, 0, 0, 1);
+	color: #fff;
 }

@@ -22,6 +22,10 @@
 
 		.footer-menu {
 
+			.menu-item:not(:last-child) {
+				margin-right: .5rem;
+			}
+
 			.menu-footer {
 
 			}
@@ -41,7 +45,7 @@
 .footer-menu ul li {
 	display: inline;
 	padding: .5rem;
-	margin: 1.5rem 0;
+	margin: 2.5rem .5rem;
 }
 
 .footer-menu ul li:last-child {
