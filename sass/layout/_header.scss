@@ -1,5 +1,5 @@
 .header {
-	background-color: var(--light-grey-2);
+	background-color: var(--light-grey-1);
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
@@ -33,6 +33,10 @@
 				//color: var(--black);
 				text-decoration: none;
 			}
+		}
+
+		&__search {
+			width: 50%;
 		}
 	}
 }

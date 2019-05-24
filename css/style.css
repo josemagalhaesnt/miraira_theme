@@ -1,5 +1,6 @@
 /** Colors **/
 @import url("https://fonts.googleapis.com/css?family=Roboto|Lato|Noto+Sans|Open+Sans|Montserrat");
+@import url("https://use.fontawesome.com/releases/v5.8.2/css/all.css");
 :root {
   --wine: #990000;
   --main-orange: #ca2604;
@@ -8,8 +9,11 @@
   --yellow: #e89005;
   --beige: #F5E2C8;
   --grey: #BBB8B2;
-  --light-grey-1: #eae9e7;
-  --light-grey-2: #f8f7f7;
+  --dark-grey-1: #7F7F7F;
+  --dark-grey-2: #a5a5a5;
+  --light-grey-1: #f2f2f2;
+  --light-grey-2: #eae9e7;
+  --light-grey-3: #cbcbcb;
   --white: #fff;
   --black: #222; }
 
@@ -158,22 +162,40 @@ h4 {
   background-color: black;
   color: #fff; }
 
-.top-header__search .search-form .has-search .form-control {
-  padding-left: 2.375rem; }
-
-.top-header__search .search-form .has-search .form-control-feedback {
-  position: absolute;
-  z-index: 2;
-  display: block;
-  width: 2.375rem;
-  height: 2.375rem;
-  line-height: 2.375rem;
-  text-align: center;
-  pointer-events: none;
-  color: #aaa; }
+.search-form {
+  flex: 0 0 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .search-form__input {
+    font-family: inherit;
+    font-size: inherit;
+    background-color: var(--light-grey-3);
+    border: none;
+    padding: .7rem 2rem;
+    border-radius: 10rem;
+    width: 90%;
+    transition: all .2s;
+    margin-right: -3.25rem; }
+    .search-form__input:focus {
+      outline: none;
+      width: 100%; }
+  .search-form__input:focus + .search-form__button {
+    background-color: var(--light-grey-3); }
+  .search-form__button {
+    border: none;
+    background-color: var(--light-grey-3); }
+    .search-form__button:focus {
+      outline: none; }
+    .search-form__button:active {
+      transform: translateY(2px); }
+  .search-form__icon {
+    width: 2.25rem;
+    height: 2.25rem;
+    color: var(--black); }
 
 .header {
-  background-color: var(--light-grey-2);
+  background-color: var(--light-grey-1);
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -197,6 +219,8 @@ h4 {
       display: flex; }
       .header .top-header__breadcrumbs, .header .top-header__breadcrumbs:link, .header .top-header__breadcrumbs:visited {
         text-decoration: none; }
+    .header .top-header__search {
+      width: 50%; }
 
 /** Navbar **/
 .menu-area {
