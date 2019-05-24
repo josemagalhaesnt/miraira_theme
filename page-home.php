@@ -1,7 +1,12 @@
 <?php get_header();?>
 	<div class="content-area">
 		<main>
-			<section class="middle-area">
+			<aside class="side-bar">
+				<div class="col-md-4">
+					TESTE
+				</div>
+			</aside>
+			<div class="middle-area">
 				<div class="container">
 					<div class="row">
 						<div class="main col-md-12">	
@@ -50,7 +55,7 @@
 						</div>
 					</div>
 				</div>	
-			</section>
+			</div>
 		</main>
 	</div>
 <?php get_footer();?>

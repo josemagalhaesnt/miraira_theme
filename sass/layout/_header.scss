@@ -8,7 +8,7 @@
 	/** Top Menu **/
 	.top-header {
 		width: 100%;
-		margin-top: 1rem;
+		margin-top: 7.5rem;
 		padding: 1.25rem 0;
 		font-size: 1.3rem;
 		line-height: 1.6;
@@ -34,22 +34,5 @@
 				text-decoration: none;
 			}
 		}
-
-		&__search {
-			width: 40%;
-
-			.form-control {
-				font-size: 1.3rem;
-			}
-			
-		}
 	}
-}
-
-body.home  {
-
-	.top-header {
-		display: none;
-	}
-	
 }
