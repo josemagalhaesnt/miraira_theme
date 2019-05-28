@@ -204,7 +204,7 @@ h4 {
   .header .top-header {
     width: 100%;
     margin-top: 7.5rem;
-    padding: 1.25rem 0;
+    padding: .8rem 0;
     font-size: 1.3rem;
     line-height: 1.6;
     display: flex;
@@ -379,6 +379,32 @@ h4 {
   width: 100%;
   padding: 3rem; }
 
+.search-results__box {
+  background-color: white;
+  padding: 6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-wrap: wrap; }
+
+.search-results__post:not(:last-child) {
+  margin-bottom: 1rem; }
+
+.search-results__title {
+  font-size: 3rem;
+  margin: 2.25rem 0;
+  padding: 3rem; }
+
+.search-results .navigation.pagination {
+  margin: 2.5rem auto;
+  font-size: 1.8rem;
+  flex-direction: column;
+  flex-wrap: wrap; }
+  .search-results .navigation.pagination .current {
+    background-color: var(--main-orange);
+    color: white;
+    padding: 5px; }
+
 /** Blog **/
 .wp-post-image {
   float: left;
@@ -425,23 +451,3 @@ h4 {
 .blog .meta-info p > a {
   color: var(--main-orange);
   font-weight: normal; }
-
-.search-results__box {
-  background-color: white;
-  padding: 6rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; }
-
-.search-results__post {
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap; }
-  .search-results__post:not(:last-child) {
-    margin-bottom: 1rem; }
-
-.search-results__title {
-  font-size: 3rem;
-  margin: 2.25rem 0;
-  padding: 3rem; }

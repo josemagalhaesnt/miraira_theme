@@ -1,11 +1,7 @@
 <?php get_header();?>
 	<div class="content-area">
 		<main>
-			<aside class="side-bar">
-				<div class="col-md-4">
-					TESTE
-				</div>
-			</aside>
+			
 			<div class="middle-area">
 				<div class="container">
 					<div class="row">

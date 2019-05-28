@@ -8,7 +8,7 @@
 @import "base/gutemberg-editor";
 
 @import "components/button";
-@import "components/search";
+@import "components/searchbar";
 
 @import "layout/header";
 @import "layout/navbar";
@@ -16,5 +16,6 @@
 @import "layout/footer";
 
 @import "pages/home";
-@import "pages/blog";
 @import "pages/search";
+@import "pages/blog";
+@import "pages/page";
