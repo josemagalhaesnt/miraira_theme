@@ -2,7 +2,7 @@
 .menu-area {
 	@include admin-sticky-fix(0);
 
-	background-color: white;
+	background-color: var(--icy-white);
 	box-shadow: 0 1px 1rem -6px rgba(0, 0, 0, 0.42);
 	color: var(--black);
 	padding: 1.5rem 0;
@@ -30,6 +30,8 @@
 	font-family: 'Roboto', sans-serif;
 	font-weight: 400;
 	line-height: 1.6;
+	justify-content: stretch;
+	align-items: center;
 	
 	.main-menu {
 		list-style: none;
@@ -47,6 +49,7 @@
 		.nav {
 			&-link {
 				
+				padding: 3px;
 				text-decoration: none;
 				text-transform: uppercase;
 				
@@ -67,13 +70,10 @@
 
 		.dropdown-menu {
 			font-size: 1.3rem;
-			text-align: justify;
-			text-transform: uppercase;
-
+			
 			.dropdown-item {
 
-				padding: 1rem;
-				font-weight: 300;
+				padding: .8rem 1rem;
 
 				&:link, &:visited {
 					color: black;
@@ -94,6 +94,25 @@
 			
 		}
 
+	}
+
+	.current-menu-item {
+		font-weight: 600;
+		transform: scale(1);
+		
+		.nav-link, .dropdown-toggle {
+			
+			&:link, &:visited {
+				color: $theme-default-color;
+			}
+
+			.menu-item, .dropdown-item {
+				color: $theme-default-color;
+			}
+
+		}
+		
+		
 	}
 
 	.active {

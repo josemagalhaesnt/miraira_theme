@@ -9,9 +9,12 @@
 	
 	--beige: #F5E2C8;
 	--grey: #BBB8B2;
+	--icy-white: #fdfffc;
+	--graffiti: #2c363f;
 	
 	--dark-grey-1: #7F7F7F;
 	--dark-grey-2: #a5a5a5;
+
 	--light-grey-1: #f2f2f2;
 	--light-grey-2: #eae9e7;
 	--light-grey-3: #cbcbcb;
@@ -20,7 +23,7 @@
 	--black: #222;	
 }
 
-$theme-default-color: var(--main-orange);
+$theme-default-color: var(--vivid-orange);
 
 /** Typography **/
 $default-font-size: 1.6rem;
