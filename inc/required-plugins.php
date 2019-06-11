@@ -33,6 +33,12 @@ function miraira_register_required_plugins() {
 			'is_callable' => 'wpseo_init',
 			'required' => true,
 		),
+		array(
+			'name'        => 'Max Mega Menu',
+			'slug'        => 'megamenu',
+			'required' => true,
+		)
+		
 
 	);
 
